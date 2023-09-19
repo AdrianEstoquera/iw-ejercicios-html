@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario de una suciedad</title>
+        <meta name="description" content="Practica 3">
+    </head>
+    <body>
+        <h1>Reserva de sociedad</h1>
+        <p>Rellena el siguiente formulario para reservar la socieda para un dia en concreto</p>
+        <!--FORMULARIO-->
+        <form action="server.php" method="post">
+            
+            <!--Primer fieldset-->
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                </p>
+                <p>
+                    <label for="socio">¿Eres socio?</label>
+                    <input type="radio" id="socio">
+                </p>
+                <p>
+                    <label for="mail">Email:</label>
+                    <input type="text" id="mail">
+                </p>
+                <p>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena">           
+                </p>
+            </fieldset>
+            <!--Segundo fieldset-->
+            <fieldset>
+                <legend>Datos de reserva</legend>
+                <p>
+                    <label for="edad">Edad</label>
+                    <select id="edad">
+                        <option selected>Menor de 18</option>
+                        <option>Entre 18 y 65</option>
+                        <option>Mayor de 18</option>
+                    </select>
+                </p>
+
+                <label for="fecha">Selecciona la fecha y hora de reserva:</label>
+                <p>
+                <input type="date" id="fecha">
+                <label for="time"></label>
+                <input type="time" id="time">
+                </p>
+                <p>
+                    <label for="comentario"></label>
+                    <textarea id="comentario" rows="10" cols="50">Comentarios</textarea>
+                </p>
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
